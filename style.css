@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+/*NAVEGACION */
+
+.navbar {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  line-height: 14px;
+}
+
+.nav-link {
+  font-size: 14px;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 77%;
+}
+
+.ulNav1 {
+  display: flex;
+  list-style-type: none;
+  width: 23%;
+  font-size: 30px;
+}
+
+/* PORTADAS DE LA PAGINA */
+
+.portada {
+  position: relative;
+  background-image: url(/image/2023_HOLIDAY_KV_HYPERBOLA_OF_GL_72DPI_RGB_EXT_TT_HP_LD.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: auto;
+  height: 750px;
+  color: white;
+}
+
+/*TEXTO DE LA PORTADA */
+
+.cuadroPortada {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+}
+
+.portada h1 {
+  text-align: center;
+}
+
+.portada p {
+  text-align: center;
+}
+
+/* BOTON DE LA PORTADA */
+
+.btn1 {
+  background-color: black;
+  padding: 8px;
+  color: white;
+  border-radius: 0%;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.portada2 {
+  position: relative;
+  background-image: url(/image/pexels-the-glorious-studio-10475794.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: auto;
+  height: 700px;
+}
+
+.cuadroPortada2 {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.portada2 h1 {
+  text-align: center;
+}
+
+.portada2 p {
+  text-align: center;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: #000;
+  color: #333;
+  border-radius: 0%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
+  color: white;
+}
+
+
+
+/* TITULO DE LOS CAROUSELES */
+
+.title {
+  padding: 20px;
+  font-size: 48px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* TARJETAS DE LA PORTADA 3 **********************/
+
+
+
+.card1 {
+  margin: 2px;
+  margin-top: 30px;
+}
+
+.card1 img {
+  height: 450px;
+}
+
+.card1-title {
+  font-size: 24px;
+  padding: 12px;
+}
+
+.card1-body {
+  width: 100%;
+}
+
+.card1-text {
+  font-size: 14px;
+  text-align: justify;
+  width: auto;
+  height: 80px;
+}
+
+/* TARJETAS DEL CAROUSEL  **********************************************/
+
+.padreCard {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  margin: 5px;
+}
+
+.card img {
+  width: 249px;
+  height: 250px;
+}
+
+.card-body{
+  text-align: center;
+}
+.card-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+
+.carousel-control-prev-icon {
+  background-color: #ccc;
+  fill: black;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  background-color: #ccc;
+  fill: black;
+  border-radius: 50%;
+}
+
+
+
+
+/* DIV QUE CONTIENE EL REGISTRO POR EMAIL NOTEBOOK PARA LAS NOVEDADES */
+
+
+
+
+.portada3 {
+  display: flex;
+  justify-content: center;
+  background-color: #fbc4cb;
+}
+
+.imagenRegistro {
+  width: 400px;
+  height: 200px;
+  background-color: #fbc4cb;
+}
+
+.imagenRegistro img {
+  width: 400px;
+}
+
+.registro {
+  width: 400px;
+  height: 200px;
+  background-color: #fbc4cb;
+  padding: 20px;
+}
+
+.registro h2 {
+  font-size: 24px;
+
+  text-align: left;
+  color: #000;
+}
+
+.registro p {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+}
+
+.registro input {
+  float: left;
+  width: 90%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.registro button {
+  width: 10%;
+  height: 40px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.registro input[type="radio"] {
+  width: 20px;
+  height: auto;
+  margin-top: 10px;
+
+  
+}
+
+.registro label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* PIE DE PAGINA **********************************************/
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  font-size: 11px;
+  color: #333;
+}
+
+.footer ul li a:hover {
+  color: #000;
+}
+
+ul li a {
+  text-decoration: none;
+  text-align: left;
+}
+
+/*ICONOS SOCIALES DEL FOOTER */
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  border-top: #747882;
+  padding-top: 24px;
+  align-content: center;
+}
+
+.social-icons img {
+  height: 25px;
+  width: 25px;
+  float: right;
+  color: #747882;
+  margin-right: 90px;
+}
+
+/* Reglas de CSS que se aplicarán a dispositivos con un ancho de pantalla hasta 768 */
+
+@media (max-width: 768px) {
+  /* PORTADA */
+
+  .portada {
+    height: 750px;
+  }
+
+  .cuadroPortada {
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+ 
+  .portada2 {
+    height: 300px;
+    text-align: center;
+  }
+
+  .cuadroPortada2 {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+
+/*Portada 3*/
+
+
+.card1 img {
+  width: 350px;
+ 
+}
+
+
+
+
+
+  /* Registro por Email PARA CELULARES*/
+
+  .imagenRegistro {
+    display: none;
+  }
+
+
+ 
+
+ 
+
+  .Pie {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  
+  .Pie {
+    display: block;
+  }
+  .accordion {
+    display: none;
+  }
+  .cardCelu {
+    display: none;
+  }
+}

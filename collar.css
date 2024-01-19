@@ -1,0 +1,545 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #f1eee5;
+}
+
+ /*NAVEGACION **********************************************************************************************/
+
+ .navbar {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding-left: 10px;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  line-height: 14px;
+}
+
+.nav-link {
+  font-size: 14px;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 77%;
+}
+
+.ulNav1 {
+  display: flex;
+  list-style-type: none;
+  width: 23%;
+  font-size: 30px;
+}
+
+
+/* Activacion de Contenido para Notebook */
+
+.carousel{
+  display: none;
+}
+
+.contenedorPadre {
+  background-color: #f0eee4;
+  overflow: hidden;
+}
+
+.columnaIzquierda {
+  float: left;
+  width: 17.33%;
+  background-color: #f0eee4;
+}
+
+.columnaIzquierda img {
+  width: 30%;
+  margin: 2%;
+  border: 1px solid black;
+  margin-left: 55%;
+}
+
+.columnaMedio {
+  float: left;
+  width: 43.33%;
+  margin-right: 2.5%;
+}
+
+.columnaMedio img {
+  width: 100%;
+}
+
+.columnaDerecha {
+  float: left;
+  width: 28%;
+  background-color: #ffffff;
+}
+
+/* Tarjetas NOTEBOOK *******************************************************************/
+
+.tituloProducto {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.precio {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+hr {
+  width: 350px;
+  color: gray;
+}
+
+.seleccionTamanio {
+  margin-top: 40px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.tamañoParrafo {
+  font-size: 12px;
+}
+
+/*boton de tamaño de producto ***************************************************************************/
+
+/*BOTON COMPRAR */
+
+.botoNetbook {
+  width: auto;
+  height: 150px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btNetbook {
+  background-color: black;
+  width: 90%;
+  height: 40px;
+  border-style: none;
+  border-radius: 0%;
+  color: white;
+  font-size: 16px;
+}
+
+.spanNegrita {
+  margin-top: 20px;
+  font-size: 14px;
+  margin: 20px;
+}
+
+/*BOTON GRUPAL NOTEBOOK */
+
+.btn {
+  color: black;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 16px;
+  border-radius: 0%;
+}
+
+/*TAB DESCRIPCION DEL PRODUCTO PARA NOTEBOOK********************************************************/
+
+.tabDescrip{
+  display: block;
+  clear: both;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  border-bottom: #000;
+ 
+}
+.nav {
+  justify-content: center;
+  border-bottom:#000;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.nav-link1 {
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+
+}
+
+.nav-link1.active {
+  color: black;
+  font-weight: bold;
+  border-bottom:#000;
+  border-bottom-style: solid;
+   
+}
+
+.tab-content {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+/*Reglas de CSS que se aplicarán a dispositivos con un ancho de pantalla hasta 768 ****************************/
+/************************************************************************************************************/
+
+@media (max-width: 768px) {
+
+ /*Activar el Carousel */
+
+
+ .carousel{
+  display: block;
+}
+
+
+  /* PANELES IZQUIERDA, MEDIO Y DERECHA */
+
+  .columnaIzquierda {
+    display: none;
+  }
+
+  .columnaMedio {
+    display: none;
+  }
+
+  .columnaDerecha {
+    float: none;
+    width: auto;
+    height: 280px;
+  }
+
+  /* Tarjetas Responsive *******************************************************************/
+
+  .tituloProducto {
+    font-size: 18px;
+    padding-bottom: 12px;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  .precio {
+    font-size: 32px;
+    text-align: left;
+    padding-bottom: 24px;
+    padding-left: 10px;
+  }
+
+  hr {
+    color: gray;
+  }
+
+  .seleccionTamanio {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: gray;
+    margin: 10px;
+  }
+
+  .tamañoParrafo {
+    font-size: 14px;
+  }
+
+  /*BOTONES GRUPALES PARA EL TAMAÑO DEL PRODUCTO ***************************************************************************/
+
+  .btn {
+    color: black;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: gray;
+    font-size: 16px;
+    border-radius: 0%;
+  }
+
+  /* BOTON DE COMPRAR */
+
+  .botoNetbook {
+    display: none;
+  }
+
+  .boton {
+    width: auto;
+    text-align: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 30px;
+    border-top: 1px solid gray;
+  }
+
+  .btn1 {
+    background-color: black;
+    width: 90%;
+    height: 40px;
+    border-style: none;
+    border-radius: 0%;
+    color: white;
+    font-size: 16px;
+  }
+
+  .spanNegrita {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* TAB DE DESCRIPCION */
+
+  /*Oculta el tab de la netbook*/
+  .tabDescrip {
+    display: none;
+  }
+
+  .nav {
+    border-color: #747882;
+  }
+
+  .nav-link1 {
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .nav-link1.active {
+    display: block;
+    background-color: #f1eee5;
+    border-color: gray;
+    border-bottom: 2px solid black;
+  }
+
+  .tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+
+/* TARJETAS DEL CAROUSEL  **********************************************/
+
+.padreCard {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  margin: 5px;
+}
+
+.card img {
+  width: 249px;
+  height: 250px;
+}
+
+.card-body {
+  text-align: center;
+}
+.card-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+  background-color: #ccc;
+  fill: black;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  background-color: #ccc;
+  fill: black;
+  border-radius: 50%;
+}
+
+/* DIV QUE CONTIENE EL REGISTRO POR EMAIL NOTEBOOK PARA LAS NOVEDADES */
+
+.portada3 {
+  display: flex;
+  justify-content: center;
+  background-color: #fbc4cb;
+}
+
+.imagenRegistro {
+  display: none;
+}
+
+.registro {
+  width: 50%;
+  height: 250px;
+  background-color: #fbc4cb;
+  padding: 20px;
+}
+
+.registro h2 {
+  font-size: 24px;
+
+  text-align: left;
+  color: #000;
+}
+
+.registro p {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+}
+
+.registro input {
+  float: left;
+  width: 90%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.registro button {
+  width: 10%;
+  height: 40px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.registro input[type="radio"] {
+  width: 20px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.registro label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* PIE DE PAGINA ******************************************************************************************/
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .col-md-3 {
+  padding: 0 15px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  font-size: 11px;
+  color: #333;
+}
+
+.footer ul li a:hover {
+  color: #000;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+/*ICONOS SOCIALES DEL FOOTER ****************************************************************************/
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  border-top: #747882;
+  padding-top: 24px;
+  align-content: center;
+}
+
+.social-icons img {
+  height: 25px;
+  width: 25px;
+  float: right;
+  color: #747882;
+  margin-right: 90px;
+}
+
+.container {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .imagenRegistro {
+    display: block;
+  }
+
+  .contenedorPadre {
+    display: block;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .accordion {
+    display: none;
+    background-color: #f0efe5;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .cardCelu {
+    display: none;
+  }
+}

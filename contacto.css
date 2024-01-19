@@ -1,0 +1,58 @@
+/* Formulario de Contacto */
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .padre{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background-color:aqua
+  }
+  
+  
+  .hijo{
+  
+  width: 100px;
+  background-color: chocolate;
+  }
+  
+  
+  .hijo1{
+  
+    width: 100px;
+    background-color:brown;
+    }
+  
+  
+    .hijo2{
+  
+      width: 100px;
+      background-color: chocolate;
+      }
